@@ -1,0 +1,3 @@
+https://jekyllrb.com/docs/installation/windows/
+jekyll new . --force
+bundle exec jekyll serve
