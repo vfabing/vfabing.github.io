@@ -21,3 +21,4 @@ steps:
 
 - script: bundle exec jekyll algolia
   displayName: 'bundle exec jekyll algolia'
+  env: { ALGOLIA_API_KEY: $(ALGOLIA_API_KEY) }
