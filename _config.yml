@@ -40,3 +40,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+algolia:
+  application_id: TDRRRETCW4
+  index_name: jekyll
+  search_only_api_key: fb8c3f219828e4d117831f72756ca38a
