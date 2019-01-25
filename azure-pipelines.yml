@@ -19,5 +19,5 @@ steps:
     volumes: |
       $(build.sourcesDirectory):/srv/jekyll
       $(build.binariesDirectory):/srv/jekyll/_site
-    containerCommand: 'gem source --remove https://rubygems.org; gem source -a http://rubygems.org; gem install bundler; bundle exec jekyll algolia'
+    containerCommand: 'gem source --remove https://rubygems.org ; gem source -a http://rubygems.org ; gem install bundler ; bundle exec jekyll algolia'
     detached: false
