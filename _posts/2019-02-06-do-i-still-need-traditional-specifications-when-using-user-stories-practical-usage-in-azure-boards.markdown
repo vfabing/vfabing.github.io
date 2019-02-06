@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do I still need traditional specifications when using User Stories? Practical usage in Azure Boards"
-date:   2019-01-25 15:49:00 +0200
+date:   2019-02-06 13:37:00 +0200
 categories: [azure-devops]
 tags: [azure-devops]
 ---
