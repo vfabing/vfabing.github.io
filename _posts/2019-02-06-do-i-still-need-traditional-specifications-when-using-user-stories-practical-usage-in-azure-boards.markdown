@@ -13,7 +13,7 @@ However, it has been largely proven and accepted that writing a huge file of a f
 
 That is why in Agile methods, people donâ€™t want to spend time on conceiving and writing specification which might be used in 6 months (and which of course will be outdated by that time), but prefer to describe at a high level their needs, often as a form of User Stories.  
 
-![01-create-user-stories-with-azure-boards](https://github.com/vfabing/vfabing.github.io/blob/master/_posts/01-create-user-stories-with-azure-boards.png)
+![01-create-user-stories-with-azure-boards](https://raw.githubusercontent.com/vfabing/vfabing.github.io/master/_posts/01-create-user-stories-with-azure-boards.png)
 
 You can add a new User Story from many places in Azure Boards. One of the fastest is directly from the Backlogs pages which enable to create a User Story just by its name.  
 
@@ -33,7 +33,7 @@ However, as this is heavily time consuming, the difficulty on the subject is to 
 
 As a rule of thumb, it is widely accepted that around one to two sprints of User Stories in advance (i.e. except the current one) should be sufficiently detailed in order to optimize the team organization at best : It will allow to swap User stories during the Sprint Planning in case of business or technical urgency matter.  
 
-![02-detail-your-specifications-in-description-acceptance-criteria-links-or-attachments-of-user-stories](https://github.com/vfabing/vfabing.github.io/blob/master/_posts/02-detail-your-specifications-in-description-acceptance-criteria-links-or-attachments-of-user-stories.png)
+![02-detail-your-specifications-in-description-acceptance-criteria-links-or-attachments-of-user-stories](https://raw.githubusercontent.com/vfabing/vfabing.github.io/master/_posts/02-detail-your-specifications-in-description-acceptance-criteria-links-or-attachments-of-user-stories.png)
 
 To detail the specifications of your user story, you can fill the description, acceptance criteria, add a link to a file, or add it as an attachment of your User Story   
 
@@ -42,7 +42,7 @@ However, regarding the technical understanding of the product owner, having a â€
 ## Technical review and estimation  
 Having the User Stories reviewed by developers is important, as it is crucial that they perfectly understand the need behind them, to produce the best technical solution. This is usually the moment where a lot of questions, not foreseen by the product owner, arise. And this might also be a good time to provide a Story Point or Effort metrics, which can help in return the Product Owner to prioritize the backlog.  
 
-![03-drag-and-drop-your-user-stories-on-the-backlog-to-prioritize-them-according-to-story-points-and-effort.png](https://github.com/vfabing/vfabing.github.io/blob/master/_posts/03-drag-and-drop-your-user-stories-on-the-backlog-to-prioritize-them-according-to-story-points-and-effort.png)
+![03-drag-and-drop-your-user-stories-on-the-backlog-to-prioritize-them-according-to-story-points-and-effort.png](https://raw.githubusercontent.com/vfabing/vfabing.github.io/master/_posts/03-drag-and-drop-your-user-stories-on-the-backlog-to-prioritize-them-according-to-story-points-and-effort.png)
 
 Drag and drop the User Stories on the Backlog page to prioritize them according to the Story Points and Efforts  
 
