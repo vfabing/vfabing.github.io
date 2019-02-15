@@ -11,7 +11,7 @@ Creating an automated UI test for a web application using Selenium is really sup
 Like always, adding new layers when necessary is generally a good practice, and in UI testing, there is a widely used pattern named `Page Object` or sometimes `Page Object Model (POM)` which describe how to put it in practice with UI testing.
 The use of this pattern enable to correct hundreds of failing tests at once by changing only a few lines of code, and also enable to reuse UI accessibility improvments accross all tests.
 
-Conceptually, in your test scenarii, instead of manipulating the web browser by using Selenium API directly in your test code, you would use a layer called a `Page`, which would be responsible to call the right Selenium instructions in order to do something (*click a button, input text, etc.*). Then in your test code, you use your page (`HomePage` for instance), to do some action (`Authenticate()`, `DisplayTheBurgerMenu()`, etc.). Then if by any bad luck the authentication require you to do something additional, such as filling a captcha, you would only have to modify the content of the `Authenticate()` method with this new step to automatically fix all the test using authentication!
+Conceptually, in your test scenarii, instead of manipulating the web browser by using Selenium API directly in your test code, you would use a layer called a `Page`, which would be responsible to call the right Selenium instructions in order to do something (*click a button, input text, etc.*). Then in your test code, you use your page (`HomePage` for instance), to do some action (`Authenticate()`, `DisplayTheBurgerMenu()`, etc.). Then if by any bad luck one action, let's say the "authentication" part, require you to do something additional such as filling a captcha, you would only have to modify the content of the method `Authenticate()` method with this new step to automatically fix all the test using authentication!
 
 > **tl;dr** *Sample project source code is available on my github repo [`sample-selenium-dotnet`](https://github.com/vfabing/sample-selenium-dotnet){:target="_blank"}*
 
@@ -33,6 +33,7 @@ public class BingHomePage
 ```
 Then, as we don't want tests to access directly to the `IWebElement`, we declare them `private`. And we also expose one or more `public` methods acting on these `private` fields.
 > Note: In the following example, I also use an intermediary `private` property in order to load the `IWebElement` only once
+
 ```csharp
 private IWebElement _searchTextBox;
 private IWebElement SearchTextBox => _searchTextBox ?? _driver.FindElement(By.Id("sb_form_q"));
