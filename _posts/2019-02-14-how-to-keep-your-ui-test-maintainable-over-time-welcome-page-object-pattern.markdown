@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to keep your UI tests maintainable over time? Welcome to Page Object Pattern"
-date:   2019-02-06 13:37:00 +0200
+date:   2019-02-14 13:37:00 +0200
 categories: [automated-testing]
 tags: [automated-testing, selenium-net]
 ---
