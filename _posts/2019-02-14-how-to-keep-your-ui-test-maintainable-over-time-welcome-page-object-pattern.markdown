@@ -6,14 +6,14 @@ categories: [automated-testing]
 tags: [automated-testing, selenium-net]
 ---
 ## Context
-> **tl;dr** *Sample project source code is available on my github repo [`sample-selenium-dotnet`](https://github.com/vfabing/sample-selenium-dotnet)*
-
 Creating an automated UI test for a web application using Selenium is really super simple. You can leverage `Katalon Recorder` extension if you are new to coding, or start directly coding by using the `Selenium.Webdriver` package. However at the end of the day, tests are described in lines of code, and like any code base which is growing, the problem of maintainability of the code base arise.
 
 Like always, adding new layers when necessary is generally a good practice, and in UI testing, there is a widely used pattern named `Page Object` or sometimes `Page Object Model (POM)` which describe how to put it in practice with UI testing.
 The use of this pattern enable to correct hundreds of failing tests at once by changing only a few lines of code, and also enable to reuse UI accessibility improvments accross all tests.
 
 Conceptually, in your test scenarii, instead of manipulating the web browser by using Selenium API directly in your test code, you would use a layer called a `Page`, which would be responsible to call the right Selenium instructions in order to do something (*click a button, input text, etc.*). Then in your test code, you use your page (`HomePage` for instance), to do some action (`Authenticate()`, `DisplayTheBurgerMenu()`, etc.). Then if by any bad luck the authentication require you to do something additional, such as filling a captcha, you would only have to modify the content of the `Authenticate()` method with this new step to automatically fix all the test using authentication!
+
+> **tl;dr** *Sample project source code is available on my github repo [`sample-selenium-dotnet`](https://github.com/vfabing/sample-selenium-dotnet)*
 
 ## Page Object Pattern in practice
 > **Disclaimer** Some helpers were existing in Selenium.Support library, regrouped under the namespace Selenium.Support.PageObjects (but were removed as a separate project since v3.11). The following example will not be using it, as I consider the pattern pretty simple and worth implementing it yourself for comprehension, maintainability and debugging matters.
