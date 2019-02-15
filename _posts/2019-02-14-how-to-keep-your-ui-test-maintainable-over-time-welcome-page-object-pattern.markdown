@@ -47,6 +47,7 @@ public void SearchFor(string text)
 }
 ```
 All put together, this gives you:
+
 ```csharp
 public class BingHomePage
 {
