@@ -65,17 +65,17 @@ The possibility to run `Azure DevOps Server 2019` on an `Azure VM` and rely on `
 > Official announcement [here](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019?view=azure-devops#support-for-azure-sql-database)
 
 All in all, you get :
-- The same benefits of the on-premise version `Azure DevOps Server 2019` 
-- You don't need to maintain hardware and benefit from the elasticity of the Cloud (You need more CPU? more memory? storage? No problem!)
-- You don't need to manage your SQL Database instance (failover, scaling, backups, etc.)
-- My favourite advantage: You get also the benefit of being able to locate your data in a chosen `Azure Region` (*France for instance*) and profit from the security and certifications of the region (*Who wants an Azure DevOps product running in `sensitive health data certified` environment such as [French HDS](https://azure.microsoft.com/fr-fr/blog/microsoft-azure-is-now-certified-to-host-sensitive-health-data-in-france/) (`Hébergeurs de Données de Santé` or `Health Data Hosting`)?* :))
+- The **same benefits of the on-premise version** `Azure DevOps Server 2019` 
+- **No need to maintain hardware and benefit from the elasticity of the Cloud** (You need more CPU? more memory? storage? No problem!)
+- **No need to manage your SQL Database service **(failover, scaling, backups, etc.)
+- My favourite advantage: You get also the benefit of being able to **locate your data in a chosen `Azure Region` (*France for instance*) and profit from the security and certifications** of the region (*Who wants an Azure DevOps product running in `sensitive health data certified` environment such as [French HDS](https://azure.microsoft.com/fr-fr/blog/microsoft-azure-is-now-certified-to-host-sensitive-health-data-in-france/) (`Hébergeurs de Données de Santé` or `Health Data Hosting`)?* :))
 
 > If you need an Azure DevOps Server HDS certified, or if you want to get rid of those physical servers in your office, this Hybrid configuration might be the right choice for you!
 
 ## Conclusion
-For small companies, as well as big companies who want to move onto the Cloud to externalize the infrastructure management, Azure DevOps Services is the version to go, and if you just want to go one step at a time, the Hybrid configuration might be a good compromise for a start.
+For small companies, as well as big companies who want to move onto the Cloud to externalize the infrastructure management, `Azure DevOps Services` is the version to go, and if you just want to go one step at a time, the `Hybrid configuration` might be a good compromise for a start.
 
-And even if you are not ready to move onto the Cloud right now, Azure DevOps Server 2019 get you covered and let you manage things the way you used to do.
+And even if you are not ready to move onto the Cloud right now, `Azure DevOps Server 2019` get you covered and let you manage things the way you used to do.
 
 Hopefully this small comparison have given you some insights. As usual, feel free to come back to me on twitter or anything if you have any question/remark.
 
