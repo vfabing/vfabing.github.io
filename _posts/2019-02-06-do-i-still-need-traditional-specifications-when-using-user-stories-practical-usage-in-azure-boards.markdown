@@ -4,6 +4,7 @@ title:  "Do I still need traditional specifications when using User Stories? Pra
 date:   2019-02-06 13:37:00 +0200
 categories: [azure-devops]
 tags: [azure-devops, azure-boards]
+comments: true
 ---
 ## The need of User Stories  
 When starting a new development project, expressing your needs, constraints and requirements are generally the first step. Moreover, this is probably one of the most important part of the project, as it will have huge impact of how you will organize not only your team but also your code.  

@@ -4,6 +4,7 @@ title:  "Which Azure DevOps should I choose ? Services, Server 2019 or Hybrid ?"
 date:   2019-03-20 13:37:00 +0200
 categories: [azure-devops]
 tags: [azure-devops, azure-devops-services, azure-devops-server-2019, team-foundation-server]
+comments: true
 ---
 ## Terminology clarification
 We are now in March 2019, the new `Azure DevOps Server 2019` just got released. Now it is time to have a look to all the **hosting** possibilities we have regarding the `Azure DevOps` product.  

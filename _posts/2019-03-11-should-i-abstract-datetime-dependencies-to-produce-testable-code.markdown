@@ -4,6 +4,7 @@ title:  "Should I abstract DateTime dependencies to produce testable code ?"
 date:   2019-03-11 13:37:00 +0200
 categories: [dotnetcore]
 tags: [dotnetcore, automated-testing, aspnetcore, unit-testing, integration-testing]
+comments: true
 ---
 ## DateTime.Now, one of the automated test killer
 If you have read a little bit about unit testing and stuff, you probably have heard few golden rules: `new` keyworld is bad, `static` and `singleton` are dangerous, and so on.  

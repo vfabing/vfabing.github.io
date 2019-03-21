@@ -4,6 +4,7 @@ title:  "How to keep your UI tests maintainable over time? Welcome to Page Objec
 date:   2019-02-14 13:37:00 +0200
 categories: [automated-testing]
 tags: [automated-testing, selenium-net]
+comments: true
 ---
 ## Context
 Creating an automated UI test for a web application using Selenium is really super simple. You can leverage `Katalon Recorder` extension if you are new to coding, or start directly coding by using the `Selenium.Webdriver` package. However at the end of the day, tests are described in lines of code, and like any code base which is growing, the problem of maintainability of the code base arise.

@@ -4,6 +4,7 @@ title:  "How to add logging on azure with aspnetcore and serilog"
 date:   2019-02-21 13:37:00 +0200
 categories: [aspnetcore]
 tags: [aspnetcore, azure, azure-log-analytics]
+comments: true
 ---
 ## Logging as a Service in Azure
 Have you ever wished you could get a powerful logging service such as `ELK` (*`Elasticsearch`, `Logstash`, `Kibana`*), but as a service in `Azure` ?  

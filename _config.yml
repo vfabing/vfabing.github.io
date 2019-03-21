@@ -47,3 +47,9 @@ algolia:
   application_id: TDRRRETCW4
   index_name: jekyll
   search_only_api_key: fb8c3f219828e4d117831f72756ca38a
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: vivienfabing

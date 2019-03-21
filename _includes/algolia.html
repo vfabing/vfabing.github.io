@@ -17,6 +17,7 @@ const hitTemplate = function(hit) {
   }
 
   let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+  let commentUrl = `{{ site.baseurl }}${hit.url}#disqus_thread`;
 
   const title = hit._highlightResult.title.value;
 
@@ -34,6 +35,7 @@ const hitTemplate = function(hit) {
       <span class="post-meta">${date}</span>
       <h2><a class="post-link" href="${url}">${title}</a></h2>
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
+      <a data-disqus-identifier="${hit.url}" href="${commentUrl}">Comments</a>
       <div class="post-snippet">${content}</div>
     </div>
   `;
