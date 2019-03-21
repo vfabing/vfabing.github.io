@@ -16,6 +16,7 @@ layout: default
       {%- endif -%}
       {% if page.comments %}
       <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{page.id}}">0 Comments</a>
+      <span class="disqus-comment-count" data-disqus-url="{{ page.url }}"> <!-- Count will be inserted here --> </span>
       {% endif %}
     </p>
   </header>
