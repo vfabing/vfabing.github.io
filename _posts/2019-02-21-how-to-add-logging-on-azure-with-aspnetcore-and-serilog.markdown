@@ -23,7 +23,7 @@ Then once the service is created, navigate to the `Advanced settings` panel and 
 Alright, that's all for the Azure part!
 ## Add Serilog and configure Serilog.Sinks.AzureAnalytics
 
-First of all, and the 2 following Nuget packages to your aspnetcore projet:  
+First of all, add the 2 following Nuget packages to your aspnetcore projet:  
 - [`Serilog.AspNetCore`](https://github.com/serilog/serilog-aspnetcore) which will be used to simplify the configuration of Serilog in an AspNetCore app,   
 - [`Serilog.Sinks.AzureAnalytics`](https://github.com/saleem-mirza/serilog-sinks-azure-analytics) which will enable you to send your logs directly to your `Azure Log Analytics` workspace.
 
@@ -46,7 +46,7 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
         .UseSerilog();
 ```
 
-The last peace of the puzzle will be to add a call to the method `UserSerilog()` right after your `UseStartup<Startup>()` method, and that's all folks!
+The last peace of the puzzle will be to add a call to the method `UseSerilog()` right after your `UseStartup<Startup>()` method, and that's all folks!
 
 ## Browse your logs from the Azure Portal
 
