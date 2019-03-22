@@ -16,13 +16,15 @@ layout: default
       {%- endif -%}
       {% if page.comments %}
       <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{page.id}}">0 Comments</a>
-      <span class="disqus-comment-count" data-disqus-url="{{ page.url }}"> <!-- Count will be inserted here --> </span>
+      <span class="disqus-comment-count" data-disqus-url="{{ page.url }}">
+        <!-- Count will be inserted here --> </span>
       {% endif %}
     </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    {% include social-share.html %}
   </div>
 
   {%- if site.disqus.shortname -%}
