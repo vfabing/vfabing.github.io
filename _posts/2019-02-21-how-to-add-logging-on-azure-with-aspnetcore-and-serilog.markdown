@@ -58,4 +58,6 @@ Select your query, click Run and "Voilà", congratulations you can see your logs
 
 I hope you are convinced to start trying using this service :)
 
+> Note: The service is still in preview at the time of writing of this article (check [official documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-collector-api))
+
 May the code be with you!
