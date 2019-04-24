@@ -49,7 +49,7 @@ Ok, so you are not so lucky as to be able to use `Azure DevOps Services`, but yo
 - Control over your **data location** (*within your own enterprise private network*)
 - Control over the **`upgrade` timing** (*when you need to validate, plan and guide the users with the new features*)
 - **No limit to [concurrency jobs](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops)** in `Builds` or `Releases`
-  > Reference [here](https://developercommunity.visualstudio.com/content/problem/442431/unable-to-use-or-set-parallel-jobs-in-azure-devops.html​)
+  > Reference [here](https://developercommunity.visualstudio.com/content/problem/442431/unable-to-use-or-set-parallel-jobs-in-azure-devops.html)
 - Access to **`Artifacts` packages within the `Basic` access licence**
   > Reference [here](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019?view=azure-devops#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)
 
