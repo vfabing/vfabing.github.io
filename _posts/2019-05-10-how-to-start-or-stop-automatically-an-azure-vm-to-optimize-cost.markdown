@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "How start or stop automatically an azure VM to optimize cost"
+title:  "How to start or stop automatically an azure VM to optimize cost"
 date:   2019-05-10 13:37:00 +0200
 categories: [azure-devops]
 tags: [azure, azure-pipelines, azure-devops-extension, virtual-machine]
 comments: true
 ---
 ## Context
-We use very often `Virtual Machines` on Azure, for development, testing, building, etc.  
+We use `Virtual Machines` very often on Azure, for development, testing, building, etc.  
 Though these kind of VM might not be used all the time, especially very late in the night or during the weekend.
 So one easy cost optimization could be to turn off these VM during those periods to save Azure Compute, and money :)
 
