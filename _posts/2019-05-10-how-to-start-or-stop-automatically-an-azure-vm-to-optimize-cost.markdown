@@ -35,7 +35,7 @@ For this part, you can leverage the scheduling functionalities already existing 
 See [Scheduled release triggers](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops#scheduled-triggers)
 
 ## Use the **Azure Virtual Machine Manager** task in an Azure Pipeline Release
-Iin your environment, you can add a new task and select the `Azure Virtual Machine Manager` task from the `Utility` tab:
+In your environment, you can add a new task and select the `Azure Virtual Machine Manager` task from the `Utility` tab:
 
 ![01-select-azure-virtual-machine-manager-task-in-azure-pipelines-release](/assets/2019-05-10/01-select-azure-virtual-machine-manager-task-in-azure-pipelines-release.png)
 
