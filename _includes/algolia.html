@@ -4,6 +4,11 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
 
 <script>
+let myNode = document.querySelector("#search-hits > div");
+while(myNode.firstChild) {
+  myNode.removeChild(myNode.firstChild);
+}
+
 const search = instantsearch({
   appId: '{{ site.algolia.application_id }}',
   apiKey: '{{ site.algolia.search_only_api_key }}',
