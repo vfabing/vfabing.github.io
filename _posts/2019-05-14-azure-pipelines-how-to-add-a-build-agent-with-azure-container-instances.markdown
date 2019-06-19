@@ -16,7 +16,7 @@ Let's see how to run a container on `Azure Container Instances` to get a ponctua
 
 The simplest way to get an Azure DevOps build agent running in 1 command line is to reuse one of Microsoft container image available.
 
-The command line should look like the following:  
+The command line to start a build agent on `Azure Container Instances` should look like the following:  
 `az container create -g MY_RESOURCE_GROUP -n MY_CONTAINER_NAME --image mcr.microsoft.com/azure-pipelines/vsts-agent --cpu 1 --memory 7 --environment-variables VSTS_ACCOUNT=MY_ACCOUNT_NAME VSTS_TOKEN=MY_VSTS_TOKEN VSTS_AGENT=MY_AGENT_NAME VSTS_POOL=Default`
 
 Where :
@@ -34,6 +34,20 @@ You can find more information of other parameters used in `az container create` 
 ![01-azure-container-instances-running-azure-pipelines-build-agent](/assets/2019-05-14/01-azure-container-instances-running-azure-pipelines-build-agent.png)
 
 Et voilà! Your new agent is ready to run your Azure Pipelines!
+
+### Pricing
+
+Ok great, you have now your agent, but how much does it cost you per execution ?
+
+Let's do some math:
+We have 7 GB of memory, during let's say 20 minutes. If we check the [pricing page of ACI](https://azure.microsoft.com/en-us/pricing/details/container-instances/), the price of 1 second for 1 GB is $0.0000015, which gives us:
+7 * 20 * 60 * 0.0000015 = 0.01176$
+
+Let's do the same with the CPU usage. For 1 core during 20 minutes with a price of 0.0000130$ per second, that gives us:
+20 * 60 * 0.0000130 = 0.0156$
+
+Which gives us a total of 0.02736$ (around 3 cents) per 20 minutes of execution !  
+So in summary, we get a build execution on ACI for around 3 cents :)
 
 ## To go further
 
@@ -61,4 +75,4 @@ Then add to your `az container create` command the parameters:
 
 Enjoy browsing your logs through `Azure Log Analytics`! 
 
-![03-azure-container-instances-logs-from-azure-log-analytics](/assets/2019-05-14/03-azure-container-instances-logs-from-azure-log-analytics.png)
+![03-azure-container-instances-logs-from-azure-log-analytics](/assets/2019-05-14/03-azure-container-instances-logs-from-azure-log-analytics.PNG)
