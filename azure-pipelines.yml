@@ -12,13 +12,15 @@ pool:
 steps:
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '>= 2.5'
+    versionSpec: '>= 2.4'
 
 - script: |
+    gem update --system '2.0.1'
     gem install jekyll bundler
+    gem install jekyll
+    gem install bundler --version '2.0.1'
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
-
 - script: bundle exec jekyll algolia
   displayName: 'bundle exec jekyll algolia'
   env: { ALGOLIA_API_KEY: $(ALGOLIA_API_KEY) }
