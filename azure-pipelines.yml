@@ -15,9 +15,7 @@ steps:
     versionSpec: '>= 2.6.3'
 
 - script: |
-    gem update --system '2.0.1'
-    gem install jekyll
-    gem install bundler --version '2.0.1'
+    gem install jekyll bundler
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 
