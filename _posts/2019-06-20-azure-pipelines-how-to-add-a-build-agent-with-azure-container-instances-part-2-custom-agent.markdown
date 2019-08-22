@@ -15,7 +15,7 @@ However, since this method takes around 10 minutes to get it warmed up, let's se
 ## Start with the template from Microsoft documentation
 Go to [Running a self-hosted agent in Docker](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops#linux) and get the `Dockerfile` and `start.sh`.
 
-These two files are the minimum required to run a container with a azure pipeline agent installed and running inside.
+These two files are the minimum required to run a container with an azure pipeline agent installed and running inside.
 
 ## Create a private container registry using Azure Container Registry
 
