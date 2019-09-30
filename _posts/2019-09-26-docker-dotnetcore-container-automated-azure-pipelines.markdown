@@ -8,7 +8,7 @@ comments: true
 ---
 
 ## Next step after building a container: running automated tests from it
-After getting your Docker build automated in Azure Pipelines (by following the article [Optimize ASP.NET Core SPA container with Visual Studio]() for instance :), you are now wondering how could you automatize the execution of your tests in this Pipeline ?
+After getting your Docker build automated in Azure Pipelines (by following the article [Optimize ASP.NET Core SPA container with Visual Studio](https://www.vivienfabing.com/docker/2019/09/16/docker-optimize-aspnetcore-spa-container-with-visual-studio.html#visual-doesnt-yet-support-out-of-the-box-docker-for-react-spa-applications) for instance :), you are now wondering how could you automatize the execution of your tests in this Pipeline ?
 
 Well let's see now 2 ways of achieving this:
 
@@ -42,7 +42,7 @@ So let's resume the global workflow of this approach:
 
 ![01-multi-stage-docker-build-with-azure-pipelines](/assets/2019-09-26/01-add-docker-support-to-aspnetcore-react-project.png)
 
-## Add a Test stage in the Dockerfile to run the tests and get the tests results
+## Add a Test stage in the Dockerfile to run the tests
 Let's take our exiting `Dockerfile`, and just before the `dotnet publish` step, let's add a new stage:
 ```Dockerfile
 FROM build AS test
@@ -66,7 +66,7 @@ You should then be able to upload all the `.trx` files to the Azure Pipelines, s
 
 ![03-run-docker-tests-from-azure-pipelines](/assets/2019-09-26/03-run-docker-tests-from-azure-pipelines.png)
 
-For building the production image, you just need to build your `Dockerfile` without targetting any stage (Visual Studio Dockerfile is already using multi-stage builds to get a "clean` production image :))
+For building the production image, you just need to build your `Dockerfile` without targeting any stage (Visual Studio Dockerfile is already using multi-stage builds to get a "clean` production image :))
 
 ## Store your tests results outside of the build workspace to optimize Docker cache
 
