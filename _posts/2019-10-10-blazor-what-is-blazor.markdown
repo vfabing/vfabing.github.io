@@ -36,7 +36,7 @@ The `Blazor Server` version is currently available in the .NET Core 3.0 release,
 
 First let's see more precisly what is `Blazor WebAssembly`.
 As it's name implies, `Blazor` is relying on `Razor` syntax to generate your web application.
-As such, you will find yourself writing `.cshtml` and `.cs` files, as well as classical `.css` file for design.
+As such, you will find yourself writing `.razor` and `.cs` files, as well as classical `.css` file for design.
 
 An example of a `Blazor` component:
 
