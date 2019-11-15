@@ -49,7 +49,7 @@ The content of this file should be the same as our Blazor project `index.html` f
 
 > You can find the whole content of this file on [GitHub](https://github.com/vfabing/blazor-workbox-pwa/blob/master/aspnetcore-prerendering/Pages/_Host.cshtml)
 
-Then in the `Startup.cs` file of our aspnetcore all, we need to add the necessary services in `ConfigureServices` for rendering our "Mvc" page as well as the `HttpClient` used by our Blazor app
+Then in the `Startup.cs` file of our aspnetcore app , we need to add the necessary services in `ConfigureServices` for rendering our "Mvc" page as well as the `HttpClient` used by our Blazor app
 :
 ```csharp
 services.AddMvc();         
@@ -92,6 +92,8 @@ For testing the prerendering, this is pretty all we needed. You can now launch y
 Alright, maybe not as "mind blowing" as expected? Let's remember how it was without server prerendering:
 
 ![02-blazor-no-server-prerendering-with-loading](/assets/2019-11-14/02-blazor-no-server-prerendering-with-loading.gif)
+
+Better isn't it ?
 
 ## Road to the "perfect" Blazor PWA
 
