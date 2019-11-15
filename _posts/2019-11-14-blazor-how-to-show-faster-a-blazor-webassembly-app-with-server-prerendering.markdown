@@ -33,7 +33,7 @@ Even if as a .Net developer this might not be such a problem (and could rather b
 ## Server prerendering a Blazor webassembly app with aspnetcore
 
 Alright, it is time to talk about real stuff!
-First of all we will need obviously an aspnetcore 3 app, using your favourite editor to create it or the command line `dotnet new mvc`.
+First of all we will need obviously an aspnetcore 3 app, using your favourite editor to create it or the command line `dotnet new web`.
 
 We will need mainly 2 things :
 - Add a reference to `Microsoft.AspNetCore.Blazor.Server`
