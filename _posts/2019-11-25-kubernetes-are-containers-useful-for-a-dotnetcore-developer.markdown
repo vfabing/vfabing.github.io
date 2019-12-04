@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Containers - Part 1: Are containers useful for a (dotnetcore) developer?"
+title:  "Kubernetes: Are containers useful for a (dotnetcore) developer?"
 date:   2019-11-25 13:37:00 +0200
 categories: [kubernetes]
 tags: [kubernetes, dotnet, docker, devops]
