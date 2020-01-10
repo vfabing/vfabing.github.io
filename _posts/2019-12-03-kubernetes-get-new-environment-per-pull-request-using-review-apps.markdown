@@ -16,7 +16,7 @@ Well welcome to this article which will show an example of how to test this new 
 ## Workflow of Review Apps
 
 In short, the only thing you really need to do is create a new YAML Pipelines from Azure DevOps using the `Deploy to Kubernetes` template and using the `Enable Review Apps workflow for Pull Request` checkbox, and that's all!
-In addition you can also register the `Kubernetes` cluster as an Azure DevOps environment to get a user friendly way to access the Pull Request temporary environment.
+In addition your `Kubernetes` cluster will be registered as an Azure DevOps environment to get a user friendly way to access the Pull Request temporary environment.
 
 What will happen is that for every Pull Request, the pipeline will be triggered and will create a new `Kubernetes` namespace to deploy inside.
 
@@ -37,7 +37,7 @@ The easiest way to start using `Review Apps` is to create a new Azure Pipelines 
 
 ![02-create-deploy-to-azure-kubernetes-service-pipeline.png](/assets/2019-12-03/02-create-deploy-to-azure-kubernetes-service-pipeline.png)
 
-After selecting your `Kubernetes` cluster, you then just need to configure few things (`Namespace`, `Container registry`, the docker `Image Name`, the `Service Port` to access your environment), and more imortantly, you need to check the `Enable Review App flow for Pull Requests` option.
+After selecting your `Kubernetes` cluster, you then just need to configure few things (`Namespace`, `Container registry`, the docker `Image Name`, the `Service Port` to access your environment), and more importantly, you need to check the `Enable Review App flow for Pull Requests` option.
 
 ![03-enable-review-apps-flow-for-pull-request.pngO](/assets/2019-12-03/03-enable-review-apps-flow-for-pull-request.png)
 
@@ -57,7 +57,7 @@ Obviously we need the build to be triggered automatically when a new Pull Reques
 
 You can see how to configure this on the [official documentation](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#build-validation).
 
-## Fixing error `A valid name is less than 256 characters in length and does not contain the following characters`
+## Fixing error "A valid name is less than 256 characters in length and does not contain the following characters"
 If you try to create a new Pull Request now, you might see it fail because of a small bug in the `Kubernetes` namespace created, using by default the `Source Branch Name`, which is containing invalid characters for a `Kubernetes` namespace.
 
 `##[error]Resource name 'refs/heads/MY_PR_NAME' is not valid. A valid name is less than 256 characters in length and does not contain the following characters: ',', '"', '/', '\', '[', ']', ':', '|', '<', '>', '+', '=', ';', '?', and '*'.`

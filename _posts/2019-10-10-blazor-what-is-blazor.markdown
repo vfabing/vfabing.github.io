@@ -7,6 +7,13 @@ tags: [blazor, webassembly, spa, server-side, pwa, electron]
 comments: true
 ---
 
+> *This article is part of a serie. You can jump to other articles here:*
+> - [*Part 1: What is Blazor*](https://www.vivienfabing.com/blazor/2019/10/10/blazor-what-is-blazor.html)
+> - [*Part 2: How to create a simple static Blazor SPA*](https://www.vivienfabing.com/blazor/2019/10/17/blazor-how-to-create-a-simple-static-blazor-website.html)
+> - [*Part 3: Hosting of a Blazor webapp*](https://www.vivienfabing.com/blazor/2019/10/24/blazor-how-to-host-a-blazor-app.html)
+> - [*Part 4: How to get a Blazor PWA using Workbox*](https://www.vivienfabing.com/blazor/2019/10/31/blazor-how-to-get-a-blazor-pwa-using-workbox.html)
+> - [*Part 5: Show our Blazor webassembly app faster by using server prerendering*](https://www.vivienfabing.com/blazor/2019/11/14/blazor-how-to-show-faster-a-blazor-webassembly-app-with-server-prerendering.html)
+
 ## Write a SPA in C#!
 
 Imagine being able to leverage your knowledge on .NET, and especially C#, to a build a Web application, and more specifically a Single Page Application?  
