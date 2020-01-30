@@ -88,7 +88,7 @@ WORKDIR /src
 
 Alright! Let's try again to generate our image with `docker build -t docker-aspnetcore-react .`
 
-![03-docker-react-aspnetcore-successfully-built](/assets/2019-09-16/03-docker-react-aspnetcore-successfully-built.PNG)
+![03-docker-react-aspnetcore-successfully-built](/assets/2019-09-16/03-docker-react-aspnetcore-successfully-built.png)
 
 And yeah! It is now working!
 
