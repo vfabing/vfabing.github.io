@@ -39,7 +39,7 @@ Visual Studio should add to your project some [MSBuild properties](https://githu
 
 Wonderful! Let's try now to generate an image from our Dockerfile by running `docker build -t docker-aspnetcore-react .`
 
-![02-docker-react-aspnetcore-npm-not-found](/assets/2019-09-16/02-docker-react-aspnetcore-npm-not-found.PNG)
+![02-docker-react-aspnetcore-npm-not-found](/assets/2019-09-16/02-docker-react-aspnetcore-npm-not-found.png)
 
 Oh no! `npm` command line was not found...
 
