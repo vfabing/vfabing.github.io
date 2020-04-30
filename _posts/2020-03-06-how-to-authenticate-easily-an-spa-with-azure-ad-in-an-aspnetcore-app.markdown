@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to authenticate easily an SPA with Azure AD in an aspnetore app"
+title:  "How to authenticate easily an SPA with Azure AD in an aspnetcore app"
 date:   2020-03-06 13:37:00 +0200
 categories: [aspnetcore]
 tags: [aspnetcore, azure-ad, azure-active-directory, spa, react, cookie]
