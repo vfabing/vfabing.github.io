@@ -34,7 +34,7 @@ And to achieve this, we needed to add **some modifications** to the default Azur
 3. In the SPA, call the `/api/auth` path to authenticate yourself on `Azure AD`
 4. In the same API endpoint, check the user email, and show an error message if not authorized.
 
-## Override default redirection to Azure AD to return a `401` Unauthorized Status Code
+## Override default redirection to Azure AD to return a **401** Unauthorized Status Code
 
 In order to do this, we need to define the `DefaultChallengeScheme` as our `CustomApiScheme`, as well as creating and registering our own `AuthenticationHandler` to return a `401` status code:
 
@@ -93,7 +93,7 @@ private void ConfigureAuthentication(IServiceCollection services)
 ```
 ![01-aspnetcore-azuread-authentication-cookie.png](/assets/2020-03-06/01-aspnetcore-azuread-authentication-cookie.png)
 
-## Redirect to the `/api/auth` authentication endpoint when receiving a `401` unauthorized
+## Redirect to the **/api/auth** authentication endpoint when receiving a **401** unauthorized
 In our sample app, we only have one API call so I just made a small change in the `FetchData.js` file. In a more complex application, you probably would have to configure the behaviour you want in the `fetch`, `axios` or whatsoever way of getting data.
 
 ```js
