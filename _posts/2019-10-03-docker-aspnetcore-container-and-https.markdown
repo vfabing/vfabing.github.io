@@ -30,7 +30,7 @@ Let's see how to expose our container directly in `https` then.
 
 When you run your `ASP.NET` Core app using `dotnet run`, your app is hosted on the Kestrel web server, of which you can set up `https` access.
 
-If you have a look at the official documentation, you have two built-in ways of doing this: one for running a [development](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnetcore-docker-https-development.md) container, and one for a [production](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnetcore-docker-https.md) container.
+If you have a look at the official documentation, you have two built-in ways of doing this: one for running a [development](https://github.com/dotnet/dotnet-docker/blob/master/samples/run-aspnetcore-https-development.md) container, and one for a [production](https://github.com/dotnet/dotnet-docker/blob/master/samples/host-aspnetcore-https.md) container.
 Most of the steps are common for these two ways, and the main difference being to use the `user-secrets` in the `development` version against using environment variables in the `production` version.
 
 Let's implement the `production` way on this article:

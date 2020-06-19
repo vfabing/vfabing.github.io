@@ -16,9 +16,9 @@ comments: true
 
 ## Start writing a Blazor app in seconds
 
-As of today, if you want to start writing a Blazor app in just few seconds, you can follow the official [get started](https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&tabs=netcore-cli) guide which requires mainly 3 points:
-- Install the latest [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) release
-- Install the latest `Blazor` template by running `dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-*`
+As of today, if you want to start writing a Blazor app in just few seconds, you can follow the official [get started](https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started) guide which requires mainly 3 points:
+- Install the latest [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) release
+- ~~Install the latest `Blazor` template by running `dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-*`~~ (*Not necessary anymore with SDK 3.1.300 or later*)
 - Create a new `Blazor WebAssembly` project by running:
   - `dotnet new blazorwasm -o MyBlazorWebAssemblyProject`,
   - then `cd MyBlazorWebAssemblyProject`
