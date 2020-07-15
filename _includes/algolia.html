@@ -15,6 +15,15 @@ const search = instantsearch({
   indexName: '{{ site.algolia.index_name }}'
 });
 
+  search.on('render', function () {
+    if (typeof DISQUSWIDGETS != 'undefined') {
+      console.debug("rendering counts");
+      DISQUSWIDGETS.getCount({ reset: true });
+    } else {
+      console.debug("DISQUSWIDGETS undefined");
+    }
+  });
+
 const hitTemplate = function(hit) {
   let date = '';
   if (hit.date) {

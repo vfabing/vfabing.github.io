@@ -21,6 +21,9 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h2>
+        
+        <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.id}}">0 Comments</a>
+        <span class="disqus-comment-count" data-disqus-url="{{post.url}}"> <!-- Count will be inserted here --> </span>
 
         <div class="post-snippet">{{ post.excerpt }}</div>
       </div>

@@ -28,7 +28,7 @@ For the scale used, originally I liked to use the [Fibonacci sequence](https://e
 - half a day (3 hours)
 - one day (6 hours)
 
-**By default, I don't have any task which would take less than 1 hour (because it implies understanding, developing, testing, deploying and communicating). If really too easy, It could be either be regrouped with other tasks, or counted as a **0 hour task** (explanation following below)*
+*By default, I don't have any task which would take less than 1 hour (because it implies understanding, developing, testing, deploying and communicating). If really too easy, It could be either be regrouped with other tasks, or counted as a **0 hour task** (explanation following below)*
 
 I find that 90% of our estimates fit into these values (*using task splitting or regrouping when it makes sense*). For the 10% left, we sometimes use the **0 hour task** (or "free" task) when the task is really something really trivial, as well as the `in between half a day and one day` or even `one day and half` and `2 days` for really complex tasks such as architecturing the solution or `PoC` / `Spikes` tasks. But again, this is **not** most of our estimates (*and very important that they stay like this*)
 
