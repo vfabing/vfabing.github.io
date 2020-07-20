@@ -17,7 +17,8 @@ title: Vivien Fabing's blog
 author: Vivien Fabing
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Vivien Fabing on Programming, .NET, Azure, DevOps and More.
+  Vivien Fabing on Programming, .NET, Azure, DevOps and More.  
+  Microsoft MVP (Developer Technologies).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.vivienfabing.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vivienfabing
