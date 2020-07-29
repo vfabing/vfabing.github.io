@@ -39,7 +39,7 @@ Don't forget also to register a service worker, even if empty, to be able to be 
 
 Ok things are getting interesting starting from this one.
 For offline support, you need basically 2 things:
-1) A list of all the statics assets to be cached in the browser (to all offline browsing)
+1) A list of all the statics assets to be cached in the browser.
 2) A description of how you want to handle your cache usage and update.
 
 For the first one, `Blazor` provides us with an MSBuild property named `<ServiceWorkerAssetsManifest>` which will take care of listing all the files in the published output, produce a `hash` to know if the file has changed, and resume all of this information in a `service-worker-assets.js` file. (*More info in this [Github commit](https://github.com/vfabing/presentation-2020-06-BlazorDay/commit/17bb7a1aa0d4a59e2acb90d6281ef6751fa93b77)*)
