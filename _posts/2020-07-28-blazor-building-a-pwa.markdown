@@ -58,7 +58,7 @@ But as usual, as I don't like black box, let's see a little bit more what is don
 
 If you have a look inside of `service-worker.published.js` file, you will see a simple workflow made of 4 parts:
 - A `self.assetsManifest` reference to your assets manifest, containing the list of the file needed to be cached, as well as a version computed from the hashes
-- an action when `installing` your service workeer
+- an action when `installing` your service worker
 - an action when `activating` it
 - and lastly an action when `fetching` resources.
 
